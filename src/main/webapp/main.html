@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <script>
+        window.onload = function(){
+            let user = localStorage.getItem("user");
+            document.getElementById("user").innerText=user;
+            if (!user){
+                window.location.href="index.html"
+            }
+        }
+    </script>
+</head>
+<body>
+DU er logget ind!
+<div id="user"></div>
+
+</body>
+</html>
